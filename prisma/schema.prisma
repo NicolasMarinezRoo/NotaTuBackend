@@ -20,3 +20,13 @@ model User {
   createdAt          DateTime @default(now())
   updatedAt          DateTime @updatedAt
 }
+
+model Nota {
+  id          Int       @id @default(autoincrement())
+  title       String
+  description String
+  useDate     DateTime?
+  location    String?
+  checked     Boolean?  @default(false)
+  createdAt   DateTime  @default(now())
+}

@@ -147,7 +147,7 @@
     "src//*.ts",
     "src//*.json",
     ".env"
-  ],
+, "src/services/nota.service.ts", "src/routes/nota.routes.ts", "src/controlers/nota.controller.ts"  ],
   "exclude": [
     "node_modules"
   ]
