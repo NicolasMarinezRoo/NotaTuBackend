@@ -1,4 +1,5 @@
 import { notaController } from "@/controlers/nota.controller";
+import { isAuthenticate } from "@/middlewares/auth.middleware";
 import { Router } from "express";
 
 const router = Router()
@@ -7,7 +8,7 @@ const router = Router()
 
 
 //GET Listar todas las ofertas localhost:3000/api/offers/?title=react&category=dam
-router.get('/', notaController.getAll)
+router.get('/',notaController.getAll)
 //localhost:3000/api/offers/xxxx
 router.get('/:id', notaController.getById)
 //POST añadir una oferta nueva localhost:3000/api/notas/  {body}
